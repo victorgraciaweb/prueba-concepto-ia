@@ -7,18 +7,22 @@ How to run?
 
    `make build`
 
-2. Start Docker container
+2. Start Docker containers
 
    `make start`
 
-3. Access Docker container
+3. Install Dependencies
+
+   `make composer-install`
+
+4. Access Docker container
 
    `make ssh-be`
 
-4. Up server by port 8000 in background
+5. Up server by port 8000 in background
 
    `symfony server:start --port=8000 -d`
 
-5. Open in browser
+6. Open in browser
 
    http://127.0.0.1:1000/
