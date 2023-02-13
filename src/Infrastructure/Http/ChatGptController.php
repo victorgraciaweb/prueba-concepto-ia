@@ -11,11 +11,18 @@ class ChatGptController
 {
     private ChatGptManager $chatGptManager;
 
+    /**
+     * @param ChatGptManager $chatGptManager
+     */
     public function __construct(ChatGptManager $chatGptManager)
     {
         $this->chatGptManager = $chatGptManager;
     }
 
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
     public function sendRequest(Request $request): JsonResponse
     {
         $parameters = json_decode($request->getContent(), true);

@@ -1,4 +1,4 @@
-# PHP 8.1 + Mysql 8.0 + Symfony 5.4 + Docker
+# App ChatGPT with PHP 8.1 + Mysql 8.0 + Symfony 5.4 + Docker
 
 How to run?
 --

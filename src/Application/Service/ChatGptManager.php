@@ -6,6 +6,10 @@ use OpenAI;
 
 class ChatGptManager
 {
+    /**
+     * @param string $question
+     * @return string
+     */
     public function getAnswer(string $question): string
     {
         $client = OpenAI::client($_ENV['API_KEY_OPENAI']);
