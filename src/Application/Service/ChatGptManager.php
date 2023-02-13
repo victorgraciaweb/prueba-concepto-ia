@@ -21,23 +21,22 @@ class ChatGptManager
             'temperature' => 0
         ]);
 
-        $response->id; // 'cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7'
-        $response->object; // 'text_completion'
-        $response->created; // 1589478378
-        $response->model; // 'text-davinci-003'
+        /*$response->id;
+        $response->object;
+        $response->created;
+        $response->model;
 
         foreach ($response->choices as $result) {
-            $result->text; // '\n\nThis is a test'
-            $result->index; // 0
-            $result->logprobs; // null
-            $result->finishReason; // 'length'
+            $result->text;
+            $result->index;
+            $result->logprobs;
+            $result->finishReason;
         }
 
-        $response->usage->promptTokens; // 5,
-        $response->usage->completionTokens; // 6,
-        $response->usage->totalTokens; // 11
+        $response->usage->promptTokens;
+        $response->usage->completionTokens;
+        $response->usage->totalTokens;*/
 
-
-        return $response->toArray(); // ['id' => 'cmpl-uqkvlQyYK7bGYrRHQ0eXlWi7', ...]
+        return $response->toArray();
     }
 }
