@@ -1,8 +1,4 @@
-create_product:
-  path: /product
+send_request:
+  path: /chatgpt
   methods: POST
-  controller: App\Infrastructure\Http\ProductController::create
-get_product:
-  path: /product/{id}
-  methods: GET
-  controller: App\Infrastructure\Http\ProductController::get
+  controller: App\Infrastructure\Http\ChatGptController::sendRequest
