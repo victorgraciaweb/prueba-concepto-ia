@@ -6,7 +6,6 @@ docker-compose.yml
 ###< docker configuration ###
 
 ###> symfony/framework-bundle ###
-/.env
 /.env.local
 /.env.local.php
 /.env.*.local
