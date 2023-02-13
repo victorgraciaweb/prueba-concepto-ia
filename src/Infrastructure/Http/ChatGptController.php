@@ -33,10 +33,6 @@ class ChatGptController
             return new JsonResponse([], Response::HTTP_NOT_FOUND);
         }
 
-        return new JsonResponse([
-            'answer' => [
-                'text' => $answer
-            ]
-        ]);
+        return new JsonResponse($answer);
     }
 }
