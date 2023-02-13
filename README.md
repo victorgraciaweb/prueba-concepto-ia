@@ -19,10 +19,14 @@ How to run?
 
    `make ssh-be`
 
-5. Up server by port 8000 in background
+5. Install TLS certificate
+
+   `symfony server:ca:install`
+
+6. Up server by port 8000 in background
 
    `symfony server:start --port=8000 -d`
 
-6. Open in browser
+7. Open in browser
 
-   http://127.0.0.1:1000/
+   https://127.0.0.1:1000/
