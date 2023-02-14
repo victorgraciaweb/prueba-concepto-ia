@@ -26,9 +26,12 @@ class ChatGptController
     public function sendRequest(Request $request): JsonResponse
     {
         $parameters = json_decode($request->getContent(), true);
-        $question = $parameters['question'] ?? '';
+        $model = $parameters['model'] ?? '';
+        $prompt = $parameters['prompt'] ?? '';
+        $max_tokens = $parameters['max_tokens'] ?? '';
+        $temperature = $parameters['temperature'] ?? '';
 
-        $answer = $this->chatGptManager->getAnswer($question);
+        $answer = $this->chatGptManager->getAnswer($model, $prompt, $max_tokens, $temperature);
         if (!$answer) {
             return new JsonResponse([], Response::HTTP_NOT_FOUND);
         }
